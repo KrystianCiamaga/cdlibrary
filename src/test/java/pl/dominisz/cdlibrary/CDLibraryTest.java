@@ -118,4 +118,13 @@ public class CDLibraryTest {
         assertTrue(actualArtists.contains("artist2"));
     }
 
+
+    @Test
+    void testLoadFromFile(){
+        CDLibrary libraryFromFile=new CDLibrary();
+        libraryFromFile.loadFromFile("/testlibrary.txt");
+        assertEquals(cdLibrary,libraryFromFile);
+
+    }
+
 }

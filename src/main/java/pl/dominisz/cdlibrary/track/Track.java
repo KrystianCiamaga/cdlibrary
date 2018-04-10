@@ -2,9 +2,12 @@ package pl.dominisz.cdlibrary.track;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import pl.dominisz.cdlibrary.Genre;
 import pl.dominisz.cdlibrary.TimeUtil;
+
+import java.util.Objects;
 
 /**
  * http://dominisz.pl
@@ -12,6 +15,7 @@ import pl.dominisz.cdlibrary.TimeUtil;
  */
 @Getter
 @AllArgsConstructor
+@EqualsAndHashCode
 public class Track {
 
     private String title;
